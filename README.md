@@ -7,6 +7,17 @@ The folders represent various scripts and resources applicable to individual mem
 #### Network Enumeration
 The first step in evaluating a target network is to identify open ports and active services.
 
-References: 
-[Try Hack Me NMAP room](https://tryhackme.com/r/room/furthernmap)
-[NMAP Cheat Sheet All Commands & Flags Nathan House](https://www.stationx.net/nmap-cheat-sheet/)
+NMAP Commands
+nmap <flag(s)> <target/file>
+
+
+
+References:\
+[Try Hack Me NMAP room](https://tryhackme.com/r/room/furthernmap)\
+[NMAP Cheat Sheet All Commands & Flags Nathan House](https://www.stationx.net/nmap-cheat-sheet/)\
+
+## ACCESS
+
+Telnet Commands
+
+SSH Commands
