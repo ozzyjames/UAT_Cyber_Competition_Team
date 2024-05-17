@@ -22,4 +22,5 @@ Summary of Log Files
 |/var/log/btmp	| Failed login attempts. |
 
 References:\
-[Try Hack Me Hydra](https://tryhackme.com/r/room/hydra)\
+[Try Hack Me Linux Forensics](https://tryhackme.com/r/room/linuxforensics)\
+[Try Hack Me Disgruntled](https://tryhackme.com/r/room/disgruntled)
