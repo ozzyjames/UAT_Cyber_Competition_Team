@@ -29,9 +29,9 @@ ssh username@IP
 
 Reverse Shell:\
 [obtain your lhost from the terminal using 
-'''
+```
 ifconfig
-''' or 
+``` or 
 '''
 ip a
 '''\
