@@ -19,12 +19,12 @@ References:\
 
 ## ACCESS
 
-Telnet Commands
+Telnet Commands:\
 telnet [ip] [port]
 
-SSH Commands
+SSH Commands:\
 ssh username@IP
 
 ## EXPLOITATION
 
-Reverse Shell
+Reverse Shell:\
