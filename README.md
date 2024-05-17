@@ -28,7 +28,7 @@ ssh username@IP
 ## EXPLOITATION
 
 Reverse Shell:\
-[obtain your lhost from the terminal using 
+[obtain your lhost from the terminal using]
 ```ifconfig
 or
 ```ip a
