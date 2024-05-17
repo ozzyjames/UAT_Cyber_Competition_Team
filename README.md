@@ -35,7 +35,7 @@ ssh username@IP
 FTP Commands:
 
 References:\
-[Try Hack Me Network Services room]([https://tryhackme.com/r/room/furthernmap](https://tryhackme.com/r/room/networkservices))\
+[Try Hack Me Network Services room](https://tryhackme.com/r/room/networkservices)
 
 ## EXPLOITATION
 
