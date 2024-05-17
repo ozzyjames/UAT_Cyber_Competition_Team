@@ -17,7 +17,7 @@ References:\
 [NMAP Cheat Sheet All Commands & Flags Nathan House](https://www.stationx.net/nmap-cheat-sheet/)
 
 
-## ACCESS
+## REMOTE ACCESS (Network Services)
 [An overview of SMB, Telnet, SSH and FTP](https://chatgpt.com/share/3a9c17c6-db6d-48b6-ae75-a3d976bdfd4f)
 
 SMB Commands:
@@ -33,6 +33,9 @@ SSH Commands:
 ssh username@IP
 ```
 FTP Commands:
+
+References:\
+[Try Hack Me Network Services room]([https://tryhackme.com/r/room/furthernmap](https://tryhackme.com/r/room/networkservices))\
 
 ## EXPLOITATION
 
