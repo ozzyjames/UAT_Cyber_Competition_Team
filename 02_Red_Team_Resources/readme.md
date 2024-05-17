@@ -1,8 +1,7 @@
 Place Red Team/Pentesting Scripts and Resources Here.
 
 ## PASSWORD CRACKING
-The first step in evaluating a target network is to identify open ports and active services.
-
+### Hyrdra
 ```
 hydra -t 4 -l [userName] -P /usr/share/wordlists/rockyou.txt -vV [ip] [protocol]
 ```
