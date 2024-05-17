@@ -22,7 +22,7 @@ References:\
 
 SMB Commands:\
 ```zsh
-smbclient //IP/[share] -U [userName] -p [port]
+smbclient //[ip]/[share] -U [userName] -p [port]
 ```
 Telnet Commands:\
 ```zsh
