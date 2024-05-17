@@ -18,12 +18,21 @@ References:\
 
 
 ## ACCESS
+[An overview of SMB, Telnet, SSH and FTP](https://chatgpt.com/share/3a9c17c6-db6d-48b6-ae75-a3d976bdfd4f)
 
+SMB Commands:\
+```zsh
+smbclient //IP/[share] -U [userName] -p [port]
+```
 Telnet Commands:\
+```zsh
 telnet [ip] [port]
-
+```
 SSH Commands:\
+```zsh
 ssh username@IP
+```
+FTP Commands:\
 
 ## EXPLOITATION
 
