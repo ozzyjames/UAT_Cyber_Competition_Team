@@ -8,7 +8,7 @@ The folders represent various scripts and resources applicable to individual mem
 The first step in evaluating a target network is to identify open ports and active services.
 
 NMAP Commands\
-nmap <flag(s)> <target/file>
+nmap [flag(s)] [target/file]
 
 
 
@@ -20,5 +20,11 @@ References:\
 ## ACCESS
 
 Telnet Commands
+telnet [ip] [port]
 
 SSH Commands
+ssh username@IP
+
+## EXPLOITATION
+
+Reverse Shell
