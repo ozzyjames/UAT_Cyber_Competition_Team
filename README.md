@@ -14,7 +14,7 @@ nmap <flag(s)> <target/file>
 
 References:\
 [Try Hack Me NMAP room](https://tryhackme.com/r/room/furthernmap)\
-[NMAP Cheat Sheet All Commands & Flags Nathan House](https://www.stationx.net/nmap-cheat-sheet/) \
+[NMAP Cheat Sheet All Commands & Flags Nathan House](https://www.stationx.net/nmap-cheat-sheet/)
 
 
 ## ACCESS
