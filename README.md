@@ -1,4 +1,4 @@
-# A Public Repository for the UAT Cyber Competition Team
+# A Public Repository for the UAT Cyber Competition Team <img src="https://www.uat.edu/themes/uat/images/uat-logo.png" style="float: right; margin-left: 10px;" />
 The folders represent various scripts and resources applicable to individual members or subject areas to support Blue or Red team operations.  The guidance below is for quick reference and will continue to evolve as we develop use-cases.
 > ### Using any of the resources within this repository without proper permission by the target network owner will likely be illegal.  These resources are for educational purposes only. 
 
