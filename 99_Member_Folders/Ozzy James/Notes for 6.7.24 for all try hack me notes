@@ -1,0 +1,270 @@
+Finding Hidden Websites
+Use the gobuster tool with the following command:
+ Copy code
+gobuster -u http://fakebank.com -w wordlist.txt dir
+The -u flag specifies the website to scan
+The -w flag takes a wordlist file to iterate through and find hidden pages
+Inventor of the World Wide Web
+Tim Berners-Lee
+IP Addresses
+Public IP addresses are provided by Internet Service Providers (ISPs) for a monthly fee
+IPv4 uses a 32-bit numbering system, allowing for 2^32 (approx. 4.29 billion) IP addresses
+IPv6 uses a 128-bit numbering system, supporting up to 2^128 (approx. 340 trillion) IP addresses, resolving the limitations of IPv4
+Windows Firewall Defender
+Is a Host firewall (a host firewall is a program that ships as part of your system or is installed)
+MAC Address
+MAC stands for Media Access Control
+A MAC address is a 12-character hexadecimal number split into two's and separated by colons (e.g., a4:c3:f0:85:ac:2d)
+The first 6 characters represent the manufacturer, and the last 6 are a unique identifier
+Ping and ICMP
+Ping uses ICMP (Internet Control Message Protocol) packets to test the performance and reliability of a connection between devices
+Ping measures the time taken for ICMP echo packets to travel between devices and receive a reply
+Ping can be performed against devices on a network or websites using the command ping <IP address or URL>
+LAN Topologies
+Star Topology: Devices are individually connected to a central networking device (switch or hub)
+Bus Topology: Devices are connected to a single backbone cable, which can cause bottlenecks and difficulty in troubleshooting
+Ring Topology: Devices are connected directly to each other in a loop, requiring less cabling and dedicated hardware
+Network Devices
+Switch: Used to centrally connect multiple devices on a local network and transmit data to the correct location
+Router: Connects networks and passes data between them using routing
+Subnetting
+Subnetting divides a network into smaller pieces
+There are 32 bits in a subnet mask, and each octet can range from 0-255
+Network Addressing
+Network Address: Identifies the start of a network
+Host Address: Identifies devices within a network
+Default Gateway: The device responsible for sending data to another network
+Address Resolution Protocol (ARP)
+ARP allows devices to identify themselves on a network by associating their MAC address with an IP address
+Devices keep a log of MAC addresses associated with other devices
+When a device wants to communicate with another, it sends a broadcast to the entire network searching for the specific device's MAC address
+If a device has the requested IP address, it sends an ARP reply with its MAC address
+The initial device stores this MAC address and IP address mapping in its ARP cache
+IP addresses can be assigned in two ways:
+Manual Assignment
+IP addresses are physically entered into a device.
+Automatic Assignment (Most Common)
+A DHCP (Dynamic Host Configuration Protocol) server is used.
+When a device connects to a network and does not have a manually assigned IP address, it follows these steps:
+The device sends a DHCP Discover request to check for DHCP servers on the network.
+The DHCP server responds with a DHCP Offer, suggesting an IP address for the device to use.
+The device sends a DHCP Request, confirming its acceptance of the offered IP address.
+The DHCP server sends a DHCP ACK (Acknowledgment), allowing the device to start using the assigned IP address.
+OSI (Open Systems Interconnection) Model
+Fundamental, critical model in networking
+Provides framework for how networked devices send, receive, interpret data
+Benefit: Allows devices with different functions/designs to communicate on a network
+Data sent follows OSI model uniformity, understandable by other devices
+7 Layers of OSI Model (Layer 7 to Layer 1):
+Key Points:
+Each layer has different responsibilities
+As data travels through layers, specific processes occur
+Information is added to data (encapsulation process)
+Layer 7: Application Layer
+Most familiar layer to users
+Provides protocols and rules for user interaction with data (send/receive)
+Examples:
+Email clients
+Web browsers
+File transfer software (e.g., FileZilla)
+Provide Graphical User Interface (GUI) for user interaction
+Other protocols:
+DNS (Domain Name System)
+Translates website addresses to IP addresses
+Layer 6: Presentation Layer
+Standardization of data begins
+Acts as a translator for data to/from Application Layer (Layer 7)
+Allows different software/formats to communicate
+Example: Different email clients can display email content consistently
+Handles data encryption and security features
+HTTPS (secure website) encryption occurs at this layer
+Layer 5: Session Layer
+Establishes connection (session) between computers for data transfer
+Session remains active while connection is live
+Responsibilities:
+Synchronizes computers to ensure readiness before data exchange
+Divides data into smaller chunks (packets) for transfer
+Beneficial for recovering from connection loss (only resend remaining chunks)
+Sessions are unique - data cannot travel across different sessions
+Key Points:
+Manages sessions between computers
+Prepares data for transfer by dividing into packets
+Improves reliability by allowing partial retransmission if needed
+Layer 4: Transport Layer
+Vital for transmitting data across a network
+Uses one of two protocols based on specific factors:
+TCP (Transmission Control Protocol)
+Designed for reliability and guarantee
+Establishes constant connection between devices for data transfer
+Incorporates error checking
+Ensures data chunks from Session Layer are received and reassembled in order
+Used for services that require accuracy and completeness
+File sharing, web browsing, email, etc.
+
+
+
+
+
+
+
+In the diagram below, we can see how a picture of a cat is broken down into small pieces of data (known as packets) from the "webserver", where the "computer" re-constructs the picture of the cat into the correct order.
+
+
+
+
+
+UDP (User Datagram Protocol)
+Less advanced than TCP
+No error checking or reliability features
+Data is sent without synchronization or guarantee of delivery
+Useful for small data transfers and situations where some data loss is acceptable
+Device discovery protocols like ARP, DHCP
+Video streaming (some pixelation is okay)
+
+
+
+
+
+
+
+
+
+
+
+
+Layer 3: Network Layer
+Where routing and reassembly of data chunks (packets) occur
+Routing determines optimal path for packet delivery
+Routing Factors:
+Shortest path (fewest devices to cross)
+Most reliable path (least packet loss)
+Fastest physical connection (fiber > copper)
+Routing Protocols:
+OSPF (Open Shortest Path First)
+RIP (Routing Information Protocol)
+Determine optimal routes based on factors above
+IP Addressing:
+Operates using IP addresses (e.g. 192.168.1.100)
+Devices like routers capable of IP routing = Layer 3 devices
+Key Points:
+Handles routing and reassembly of packets
+Routing protocols find optimal delivery paths
+Uses IP addressing for packet delivery
+Layer 3 devices (routers) operate at this layer
+Layer 2: Data Link Layer
+Focuses on physical addressing for data transmission
+Receives packets from Network Layer (with IP address)
+Adds physical MAC (Media Access Control) address of receiving endpoint
+MAC Addressing:
+Network Interface Card (NIC) has unique MAC address
+MAC addresses set by manufacturer and burned into NIC
+Cannot be changed (but can be spoofed)
+Physical MAC address used to identify where to send data
+Responsibilities:
+Present data in suitable format for transmission
+Package data into frames for sending over physical layer
+Key Points:
+Handles physical addressing using MAC addresses
+Obtains IP addresses from Network Layer and adds MAC addresses
+Prepares data for transmission over the Physical Layer
+Layer 1 Physical- For example ethernet cables
+
+Packets and Frames
+Small pieces of data that form a larger message/information
+Encapsulation
+Process discussed in OSI model
+Packet: Contains IP addresses
+Frame: Data inside packet after encapsulating info stripped away
+Advantages of Packets
+Efficient communication across networked devices
+Less chance of bottlenecking than sending large messages at once
+Example: Loading website image - sent in small pieces, reconstructed on computer
+
+
+
+Ports
+Essential for data exchange
+Analogy: Ships docking at compatible ports in a harbor
+Ports enforce compatibility rules for devices communicating
+Port Numbers
+Numerical values between 0 and 65535
+Risk of losing track of applications using each port
+Standard Port Assignment
+Associate applications/software with standard port numbers
+Example: Web browsers use port 80
+Allows different software to interpret data consistently
+Common Ports
+Ports between 0 and 1024 are common ports
+Standard rules assigned for common protocols/applications
+
+
+
+To connect to a port such as 1234 using the IP address 8.8.8.8 you use this command:
+ 
+nc 8.8.8.8 1234
+
+Firewalls:
+Operate at layers 3 and 4. A stateful firewall inspects the entire connection while the stateless firewall inspects the individual packets.
+
+
+
+
+DNS
+DNS (Domain Name System) is like an address book for the internet. It helps computers find the right addresses (IP addresses) for websites, email servers, and other online services.
+There are different types of DNS records, like different sections in the address book, each serving a specific purpose:
+A Record
+This record maps a website's domain name (like www.example.com) to its actual IP address (like 192.168.1.100) for regular internet connections (IPv4).
+AAAA Record
+Similar to the A record, but for the newer type of internet addresses called IPv6 (like 2001:db8:3333:4444:5555:6666:7777:8888).
+CNAME Record
+This record is like a nickname. It allows one domain name (like store.example.com) to point to another domain name (like example.shopify.com).
+MX Record
+This record tells your computer where to send emails for a particular domain (like example.com). It lists the email server addresses and their priorities.
+TXT Record
+This record can hold any text-based information. It's often used to verify domain ownership or list authorized email servers to prevent spam.
+So, DNS records act like different sections in an address book, helping computers find the right addresses for various online services by providing the necessary information in different formats.
+TLD (Top-Level Domain)
+Most righthand part of a domain name (e.g., .com in tryhackme.com)
+Two types: gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain)
+gTLD historically indicated purpose (e.g., .com for commercial, .org for organizations)
+ccTLD indicated geography (e.g., .ca for Canada, .co.uk for United Kingdom)
+Over 2000 new gTLDs available (e.g., .online, .club, .website, .biz)
+Second-Level Domain
+In tryhackme.com, "tryhackme" is the Second-Level Domain
+Limited to 63 characters + TLD
+Can only use a-z, 0-9, and hyphens (no consecutive hyphens or starting/ending with hyphens)
+Subdomain
+Sits on the left-hand side of the Second-Level Domain (e.g., admin in admin.tryhackme.com)
+Same creation restrictions as Second-Level Domain (63 characters, a-z, 0-9, hyphens)
+Can use multiple subdomains separated by periods (e.g., jupiter.servers.tryhackme.com)
+Length must be kept to 253 characters or less
+No limit to the number of subdomains
+What Happens When You Make a DNS Request
+Client checks local cache for requested domain
+If found, uses cached IP address
+If not found, sends request to recursive DNS server (usually ISP's DNS server)
+Recursive DNS server checks its own cache
+If found, returns IP address to client
+If not found, queries root DNS servers
+Root servers provide address of Top Level Domain (TLD) nameservers for requested domain's TLD (.com, .org, etc.)
+Recursive server queries TLD nameservers for address of authoritative nameservers for requested domain
+Authoritative nameservers provide requested domain's IP address to recursive server
+Recursive server caches response and returns IP address to client
+Client uses IP address to connect to requested domain
+DNS responses cached based on Time to Live (TTL) value to minimize future lookups
+Multiple redundant authoritative nameservers used for reliability
+
+
+
+
+Vulnerability Searching
+NVD keeps track of CVEs (Common Vulnerabilities and Exposures) -- whether or not there is an exploit publicly available -- so it's a really good place to look if you're researching vulnerabilities in a specific piece of software. CVEs take the form: CVE-YEAR-IDNUMBER
+
+ExploitDB tends to be very useful for hackers, as it often actually contains exploits that can be downloaded and used straight out of the box. It tends to be one of the first stops when you encounter software in a CTF or pentest.
+If you're inclined towards the CLI on Linux, Kali comes pre-installed with a tool called "searchsploit" which allows you to search ExploitDB from your own machine. This is offline, and works using a downloaded version of the database, meaning that you already have all of the exploits already on your Kali Linux!
+Ex: use searchsploit fuel cms to search for exploits for fuel cms
+To view the CVE number in linux terminal use searchsploit -x /path/to/exploit/directory/exploit_id.rb          Replacing /path/to/exploit/directory/exploit_id.rb with the actual path and filename of the exploit you want to view.
+Security Operations Center
+
+Commands for FTP (file transfer protocol)
+Bye can be used in place of exit
